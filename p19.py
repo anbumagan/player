@@ -1,12 +1,10 @@
-import math
 n=int(input())
-if(n%2==0):
-    print("2",end=" ")
-    n=n//2
-for i in range(3,int(math.sqrt(n))+1):
-    while(n%i==0):
-        print(i,end=" ")
-        n=n//i
-    i+i+1    
-if n>2:
-    print(n,end=" ")
+for i in range(2,n+1):
+    if(n%i==0):
+        c=0
+        for k in range(1,i+1):
+            if(i%k==0):
+                c=c+1
+        if(c==2):
+            print(k,end=" ")
+        
