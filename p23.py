@@ -1,6 +1,6 @@
 x,y=map(int,input().split())
 z=list(map(int,input().split()))
 a=list(map(int,input().split()))
-for i in a:
-    z.append(i)
+for j in a:
+    z.append(j)
     print(max(z),end=" ")
