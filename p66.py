@@ -5,4 +5,4 @@ for i in l:
     d=l.count(i)
     if(d==y):
        c.append(i)
-print(*(set(c)))
+print(*((sorted(set(c))))
