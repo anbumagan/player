@@ -5,5 +5,5 @@ c=[]
 for i in range(0,x):
     if(y[i] in z):
         c.append(y[i])
-c1=set(c)
+c1=sorted(set(c))
 print(*c1)
