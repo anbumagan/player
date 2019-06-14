@@ -1,3 +1,3 @@
-x1=str(input())
+x11=str(input())
 y=str(input())
-print(x1.count(y))
+print(x11.count(y))
