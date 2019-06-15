@@ -1,8 +1,6 @@
 x=int(input())
 l=list(map(int,input().split()))
-c=[]
-for i in range(x):
-    for j in range(i+1,x):
-        d=l[i]&l[j]
-        c.append(d)
-print(max(c))
+c=l[0]
+for i in range(1,x):
+    c&=l[i]
+print(c)    
