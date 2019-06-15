@@ -1,6 +1,6 @@
 x=int(input())
 l=list(map(int,input().split()))
-d=l[0]
+d1=l[0]
 for i in range(1,x):
-    d=d^l[i]   
-print(d)
+    d1=d1^l[i]   
+print(d1)
