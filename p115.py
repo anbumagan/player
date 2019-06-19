@@ -1,0 +1,13 @@
+l,m=map(str,input().split())
+a=len(l)
+b=len(m)
+if(a==b):
+    print(l+m)
+elif(a>b):
+    d=min(a,b)
+    l=l[0:d]
+    print(l+m)
+else:
+    d=min(a,b)
+    m=m[0:d]
+    print(l+m)
