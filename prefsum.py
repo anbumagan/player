@@ -7,6 +7,7 @@ for i in range(k-1):
         c=c+a[i+1]
     else:
         print(a[i],end=" ")
+        c=c+a[i-1]
 if(c%2==0):
     print(c)
 else:
