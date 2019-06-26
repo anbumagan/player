@@ -1,15 +1,13 @@
 a,a1=map(int,input().split())
 b=[]
+c=[]
 for i in range(0,a):
     b.append(input())
-for i in range(len(b)):
-    c=0
-    for j in range(i,len(b)):
-        if(b[i]==b[j]):
-            c=c+1
-        else:
-            break
-if(c==a1):
-    print("yes")
-else:
+for j in range(len(b)-1):
+    if(b[j]==b[j+1]):
+        c.append(b[j])
+        c.append(b[j+1])
+if(len(c)==0):
     print("no")
+else:
+    print("yes")
