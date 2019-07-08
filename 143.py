@@ -1,8 +1,8 @@
-a1=int(input())
+a2=int(input())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 c=[]
-for i in range(a1):
+for i in range(a2):
     c.append([b[i],a[i]])
 c.sort()
 c=c[::-1]
